@@ -1,0 +1,410 @@
+/*naglowek*/
+.naglowek {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 8.9rem;
+  padding: 0 5.8rem;
+}
+
+.tekstnaglowek {
+  font-size: 1.5rem;
+  height: 4rem;
+}
+/* nawigacja */
+.glowna-nawigacja-lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.glowna-nawigacja-link:link,
+.glowna-nawigacja-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.glowna-nawigacja-link:hover,
+.glowna-nawigacja-link:active {
+  color: #e67e22;
+}
+.glowna-nawigacja-link.nav-quiz:link,
+.glowna-nawigacja-link.nav-quiz:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 150px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.glowna-nawigacja-link.nav-quiz:hover,
+.glowna-nawigacja-link.nav-quiz:active {
+  background-color: #cf711f;
+}
+
+/* sekcja porownanie */
+.porownanie {
+  padding: 9.6rem 0;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4;
+  row-gap: 9.6rem;
+  align-items: center;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.zdjecie {
+  /*   height: 2rem;
+  width: 2rem; */
+  width: 60%;
+  border-radius: 30%;
+}
+
+.zdjeciebox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zdjeciebox::before,
+.zdjeciebox::after {
+  content: "";
+  display: block;
+  border-radius: 30%;
+  position: absolute;
+}
+.zdjeciebox::before {
+  width: 70%;
+  padding-bottom: 50%;
+  background-color: #fdf2e9;
+  z-index: -1;
+}
+
+.zdjeciebox::after {
+  width: 80%;
+  padding-bottom: 60%;
+  background-color: #fae5d3;
+  z-index: -2;
+}
+.tytul,
+.porownanienaglowek,
+.nazwaurz {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.nazwaurz {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.opisurz {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.porownanienaglowek {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.podnaglowek {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.numer-urzadzenie {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1, 2rem;
+}
+
+/* sekcja microcon */
+
+.microcon-sekcja {
+  background-color: #fdf2e9;
+  padding: 8.2rem 0 6.6rem 0;
+}
+.microcon-img {
+  width: 100%;
+}
+.microcon-nazwa {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+.microcon-parameters {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.1rem; */
+}
+.microcon-parameter {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.microcon-link {
+  align-items: center;
+  margin-top: 1rem;
+}
+.microcon-link:link,
+.microcon-link:visited {
+  font-size: 2rem;
+
+  display: flex;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.microcon-link:active,
+.microcon-link:hover {
+  color: #e67e22;
+}
+.bi-memory {
+  margin-top: 1rem;
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.bi-cpu {
+  margin-top: 1rem;
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.bi-aspect-ratio {
+  margin-top: 1rem;
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.bi-lightning {
+  margin-top: 1rem;
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.bi-tag {
+  margin-top: 1rem;
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.kategoria1 {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #e67e22;
+  color: #333;
+  border-radius: 100px;
+}
+
+.microcon-tag {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.9rem;
+}
+
+.microcon {
+  box-shadow: 0 4.4rem 1.8rem rgba(0, 0, 0, 0.07);
+  border-radius: 11px;
+  overflow: hidden;
+  margin-left: 2rem;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+.microcon:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 4.8rem 7.2rem rgba(0, 0, 0, 0.06);
+}
+.microcon-con {
+  padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* sekcja microprocessors */
+
+.kategoria2 {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #c3c0f7;
+  color: #333;
+  border-radius: 100px;
+}
+
+.microproc {
+  box-shadow: 0 4.4rem 1.8rem rgba(0, 0, 0, 0.07);
+  border-radius: 11px;
+  overflow: hidden;
+  margin-left: 2rem;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+.microproc:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 4.8rem 7.2rem rgba(0, 0, 0, 0.06);
+}
+.microproc-con {
+  padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.microproc-sekcja {
+  background-color: #fff;
+  padding: 8.2rem 0 6.6rem 0;
+}
+
+/* sekcja microcomputers */
+
+.kategoria3 {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #bab9bd;
+  color: #333;
+  border-radius: 100px;
+}
+
+/* sekcja formularz */
+
+.formularz {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.box-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.box .naglowek-box {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+  font-size: 2rem;
+}
+
+.box-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.box-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("mikro2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.box-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.box-form input,
+.box-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.box *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.przycisk--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.przycisk--form:hover {
+  background-color: #fff;
+  color: #555;
+}
